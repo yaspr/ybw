@@ -1,0 +1,7 @@
+ybw uses the patterns below (implemented in C and in x86 inlined assembly) as workloads to evaluate the memory/cache bandwidth:
+    + init      : a[i] = c
+    + copy      : a[i] = b[i]
+    + add       : a[i] = b[i] + c[i]
+    + reduc     : d += a[i]
+    + dotprod   : d += a[i] * b[i]
+    + triad     : a[i] += b[i] * c[i]
